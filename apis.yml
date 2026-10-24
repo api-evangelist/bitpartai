@@ -1,25 +1,75 @@
 aid: bitpartai
+
 name: Bitpart.ai
-description: 'Bitpart.ai is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by crane-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/66352b116635501ff3ab78a5/t/66352b146635501ff3ab78fe/1713556130551/_logo.png?format=1500w
+
+description: 'Bitpart.ai provides a platform for creating immersive, AI‑driven virtual worlds. It offers tools such as the Bitpart Unreal Plugin, Archetypes, Coppola authoring tool, and the Aesop multi‑agent planner, enabling developers to build interactive characters and environments. The service includes documentation, tutorials, pricing plans, and a community hub, targeting game developers, simulation creators, and AI researchers.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bitpartai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- AI
+- Virtual Worlds
+- Game Development
+- Simulation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- crane-venture-partners
+
 common:
+- type: Plans
+  url: plans/bitpartai-plans-pricing.yml
+- type: Hosts
+  url: hosts/bitpartai-hosts.yml
+- type: Vendors
+  url: vendors/bitpartai-vendors.yml
+- type: DomainSecurity
+  url: security/bitpartai-domain-security.yml
 - type: Website
   url: https://www.bitpart.ai/
+- type: Documentation
+  url: https://bitpart-ai.gitbook.io/bitpart.ai-docs
+- type: DeveloperPortal
+  url: https://www.bitpart.ai/
+- type: GettingStarted
+  url: https://bitpart-ai.gitbook.io/bitpart.ai-docs/getting-started-with-bitpart/editor
+- type: Pricing
+  url: https://www.bitpart.ai/pricing
+
+apis: []
+
+x-backed-by:
+- crane-venture-partners
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Bitpart.ai documentation is served via GitBook with JavaScript rendering, preventing machine-readable spec discovery.
+  evidence:
+    - url: https://bitpart-ai.gitbook.io/bitpart.ai-docs/
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

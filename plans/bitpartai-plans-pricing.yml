@@ -1,0 +1,22 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bitpart.ai/pricing
+sources:
+- https://www.bitpart.ai/pricing
+name: Bitpart.ai pricing
+audience: business-product
+pricing_basis: flat-platform
+plans:
+- name: Solo Developer Plan
+  price_text: $0
+  price: 0
+  description: 'Free. For individual developers. Unlimited use of Fab version of: Bitpart SDK. Aesop Planner & AI Director. Archetype asset packs.
+    Coppola authoring tool. Community Support.'
+- name: Pro Plan
+  price_text: $5,000 per title per year, during development
+  price: 5000
+  description: For teams of 10 people, or less. Everything in Solo. Shared org for multiple users in Coppola. Early access to features & updates
+    via private code drops. AI design assistant in Coppola. Dedicated Support. 24-hour response time.
+docs: https://www.bitpart.ai/pricing
+note: 1 extracted row(s) were dropped because their quote was not on the page.
